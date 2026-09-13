@@ -12,7 +12,7 @@
 
 # EventPulse OS
 
-EventPulse OS is a next-generation event management platform that transforms traditional conferences into intelligent, responsive experiences. Built for the TechNova 2026 Innovation Summit, it combines real-time crowd monitoring, AI-powered assistance, and dynamic navigation to create a seamless event experience for attendees and organizers.
+EventPulse OS is a next-generation event management platform that transforms traditional conferences into intelligent, responsive experiences. It combines real-time crowd monitoring, AI-powered assistance, and dynamic navigation to create a seamless event experience for attendees and organizers.
 
 ## ✨ Features
 
@@ -218,6 +218,6 @@ For issues and questions:
 ---
 
 <div align="center">
-  <p>Built with ❤️ for the TechNova 2026 Innovation Summit</p>
+  <p>Built with ❤️ for modern event experiences</p>
   <p>Powered by <a href="https://ai.google.dev/">Google Gemini</a> & Modern Web Technologies</p>
 </div>
