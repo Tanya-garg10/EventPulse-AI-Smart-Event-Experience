@@ -215,9 +215,7 @@ For issues and questions:
 - Review existing issues
 - Create a new issue with detailed information
 
----
-
 <div align="center">
-  <p>Built with ❤️ for modern event experiences</p>
+  <p>Built with ❤️</p>
   <p>Powered by <a href="https://ai.google.dev/">Google Gemini</a> & Modern Web Technologies</p>
 </div>
