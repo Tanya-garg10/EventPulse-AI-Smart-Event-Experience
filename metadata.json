@@ -1,0 +1,6 @@
+{
+  "name": "EventPulse AI",
+  "description": "AI-powered Smart Event Experience platform with intelligent navigation, real-time crowd intelligence, conversational AI concierge, emergency assistance, and organizer operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
