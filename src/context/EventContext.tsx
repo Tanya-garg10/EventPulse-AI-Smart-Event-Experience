@@ -525,7 +525,7 @@ export const EventProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           highContrast: false,
           largeText: false,
         });
-        addToast('EVENT TELEMETRY RESET', 'All nodes restored to default TechNova 2026 baseline.', 'info');
+        addToast('EVENT TELEMETRY RESET', 'All nodes restored to default EventPulse OS baseline.', 'info');
         break;
       }
       default:

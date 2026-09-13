@@ -39,7 +39,7 @@ function getGeminiClient(): GoogleGenAI | null {
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    event: 'TechNova 2026',
+    event: 'EventPulse OS',
     timestamp: new Date().toISOString(),
     geminiConfigured: !!process.env.GEMINI_API_KEY,
   });
@@ -176,7 +176,7 @@ app.post('/api/ai/concierge', async (req, res) => {
       )
       .join('\n');
 
-    const systemInstruction = `You are EventPulse AI, an intelligent event concierge and real-time operating system for the "TechNova 2026" conference at New Delhi Convention Centre.
+    const systemInstruction = `You are EventPulse AI, an intelligent event concierge and real-time operating system for the "EventPulse OS" platform.
 Your job is to provide concise, friendly, extremely helpful, event-specific recommendations and directions to attendees.
 Always consider current crowd levels: avoid recommending crowded or critical zones (e.g. Workshop Hall B if high) unless specifically requested.
 

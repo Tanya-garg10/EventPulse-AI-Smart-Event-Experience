@@ -102,7 +102,7 @@ export const EmergencySOSModal: React.FC = () => {
                 </span>
               </div>
               <p className="text-xs text-rose-300">
-                TechNova 2026 Safety & Rapid Response Protocol
+                EventPulse OS Safety & Rapid Response Protocol
               </p>
             </div>
           </div>

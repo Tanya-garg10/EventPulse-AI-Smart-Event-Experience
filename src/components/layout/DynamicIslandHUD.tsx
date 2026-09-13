@@ -61,7 +61,7 @@ export const DynamicIslandHUD: React.FC = () => {
                 EVENTPULSE
               </span>
               <span className="text-[9px] font-mono text-cyan-400 tracking-tighter">
-                TECHNOVA 2026 · LIVE
+                EVENTPULSE OS · LIVE
               </span>
             </div>
           </div>

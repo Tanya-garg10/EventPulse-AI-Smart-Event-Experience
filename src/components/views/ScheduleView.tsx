@@ -55,7 +55,7 @@ export const ScheduleView: React.FC = () => {
             Timetable & Agenda
           </h1>
           <p className="text-xs text-slate-400 font-mono">
-            Direct living map routing and bookmarking for TechNova 2026
+            Direct living map routing and bookmarking for EventPulse OS
           </p>
         </div>
 

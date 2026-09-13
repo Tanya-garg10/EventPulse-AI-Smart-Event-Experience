@@ -86,7 +86,7 @@ export const OrganizerDashboardView: React.FC = () => {
             Event Control
           </h1>
           <p className="text-xs text-slate-400">
-            TECHNOVA 2026 · LIVE CONTROL TERMINAL
+            EVENTPULSE OS · LIVE CONTROL TERMINAL
           </p>
         </div>
 

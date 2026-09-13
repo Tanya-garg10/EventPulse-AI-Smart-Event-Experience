@@ -120,7 +120,7 @@ export class ConciergeService {
       ).slice(0, 3);
 
       return {
-        text: `For your focus on AI & Startups, TechNova 2026 has curated high-impact sessions and deal-making lounges:\n\n1. ${matched[0]?.title} (${matched[0]?.hallName})\n2. ${matched[1]?.title} (${matched[1]?.hallName})\n3. ${matched[2]?.title} (${matched[2]?.hallName})\n\nDon't miss the Founder & Investor Lounge (Zone NET-01) for curated 1-on-1 angel introductions.`,
+        text: `For your focus on AI & Startups, EventPulse OS has curated high-impact sessions and deal-making lounges:\n\n1. ${matched[0]?.title} (${matched[0]?.hallName})\n2. ${matched[1]?.title} (${matched[1]?.hallName})\n3. ${matched[2]?.title} (${matched[2]?.hallName})\n\nDon't miss the Founder & Investor Lounge (Zone NET-01) for curated 1-on-1 angel introductions.`,
         suggestedSessions: matched,
         suggestedRoute: matched[0] ? { toZoneId: matched[0].hallId, zoneName: matched[0].hallName } : undefined,
       };

@@ -153,7 +153,7 @@ export const InteractiveMapView: React.FC = () => {
 
             {/* Top Blueprint Info Overlay */}
             <div className="relative z-10 flex items-center justify-between text-[10px] font-mono text-cyan-400/80 mb-2">
-              <span>● TECHNOVA VENUE MATRIX // LEVEL {activeFloor}</span>
+              <span>● EVENTPULSE VENUE MATRIX // LEVEL {activeFloor}</span>
               <span className="flex items-center space-x-1 text-lime-400">
                 <span className="w-1.5 h-1.5 rounded-full bg-lime-400 animate-pulse" />
                 <span>CROWD TELEMETRY STREAMING</span>

@@ -51,7 +51,7 @@ export const EventHomeView: React.FC = () => {
             Good Morning, Attendee
           </h1>
           <p className="text-xs sm:text-sm font-mono text-slate-400">
-            TECHNOVA 2026 · DAY 1 · LIVE
+            EVENTPULSE OS · DAY 1 · LIVE
           </p>
         </div>
 

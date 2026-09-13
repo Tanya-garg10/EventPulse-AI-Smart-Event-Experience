@@ -183,7 +183,7 @@ export const AssistanceModeView: React.FC = () => {
 
         {/* Footer info */}
         <div className="text-center text-[10px] text-slate-500 uppercase tracking-widest pt-4">
-          TechNova 2026 Life-Safety System · Incident Response Channel Monitored 24/7
+          EventPulse OS Life-Safety System · Incident Response Channel Monitored 24/7
         </div>
       </div>
     </div>

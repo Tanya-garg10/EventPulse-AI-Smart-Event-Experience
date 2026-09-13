@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { INITIAL_SESSIONS, INITIAL_ZONES, INITIAL_ANNOUNCEMENTS } from '../data/eventData';
+import { INITIAL_SESSIONS, INITIAL_ZONES, INITIAL_ANNOUNCEMENTS, EVENT_DETAILS } from '../data/eventData';
 
 describe('Data Validation Tests', () => {
   describe('Data Structures', () => {
@@ -23,6 +23,13 @@ describe('Data Validation Tests', () => {
       expect(session).toHaveProperty('startTime');
       expect(session).toHaveProperty('endTime');
       expect(session).toHaveProperty('category');
+    });
+
+    it('should validate event details structure', () => {
+      expect(EVENT_DETAILS).toHaveProperty('name');
+      expect(EVENT_DETAILS).toHaveProperty('venue');
+      expect(EVENT_DETAILS).toHaveProperty('dates');
+      expect(EVENT_DETAILS.name).toBe('EventPulse OS');
     });
 
     it('should validate zone structure', () => {

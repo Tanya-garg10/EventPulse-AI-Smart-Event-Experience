@@ -106,7 +106,7 @@ export const DemoSandboxBar: React.FC = () => {
           <button
             onClick={() => simulateDemoScenario('reset')}
             className="flex items-center space-x-1 px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-400 hover:text-white text-xs font-medium transition-all"
-            title="Reset to default TechNova 2026 data"
+            title="Reset to default EventPulse OS data"
           >
             <RotateCcw className="w-3.5 h-3.5" />
             <span>Reset</span>

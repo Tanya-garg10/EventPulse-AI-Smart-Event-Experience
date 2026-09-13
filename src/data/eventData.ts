@@ -1,11 +1,11 @@
 import { VenueZone, Session, Announcement, EmergencyPoint, EventMetrics } from '../types';
 
 export const EVENT_DETAILS = {
-  name: 'TechNova 2026',
-  edition: '4th Annual Innovation Summit',
-  venue: 'New Delhi Convention Centre',
-  city: 'New Delhi, India',
-  dates: 'September 20–21, 2026',
+  name: 'EventPulse OS',
+  edition: 'Live Event Platform',
+  venue: 'Convention Center',
+  city: 'Metropolis',
+  dates: 'Current Event',
   currentDay: 'Day 1',
   currentTime: '11:12 AM',
   totalCapacity: 3500,
