@@ -39,6 +39,7 @@ export const AIConciergeView: React.FC = () => {
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const suggestedCommands = [
     'Plan my next 2 hours',
@@ -50,6 +51,10 @@ export const AIConciergeView: React.FC = () => {
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isLoading]);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
 
   const handleSend = async (queryText?: string) => {
     const textToSend = queryText || inputText;
@@ -96,6 +101,8 @@ export const AIConciergeView: React.FC = () => {
       setMessages((prev) => [...prev, fallbackMsg]);
     } finally {
       setIsLoading(false);
+      // Refocus input after sending
+      setTimeout(() => inputRef.current?.focus(), 100);
     }
   };
 
@@ -140,6 +147,7 @@ export const AIConciergeView: React.FC = () => {
         </span>
         <div className="flex items-center space-x-2 mt-1 px-2">
           <input
+            ref={inputRef}
             type="text"
             value={inputText}
             onChange={(e) => setInputText(e.target.value)}

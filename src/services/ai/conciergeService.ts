@@ -75,7 +75,7 @@ export class ConciergeService {
       const rec3 = sessions.find((s) => s.id === 'session-08')!; // Networking
 
       return {
-        text: `Based on your available 2-hour window and current venue density, here is an optimized, low-congestion itinerary:\n\n• **10:30** — ${rec1.title} (${rec1.hallName}, 60 min)\n• **12:15** — ${rec2.title} (${rec2.hallName}, 45 min)\n• **14:30** — ${rec3.title} (${rec3.hallName})\n\n💡 I routed you around Workshop Hall B, which is currently at critical capacity (91%).`,
+        text: `Based on your available 2-hour window and current venue density, here is an optimized, low-congestion itinerary:\n\n• 10:30 — ${rec1.title} (${rec1.hallName}, 60 min)\n• 12:15 — ${rec2.title} (${rec2.hallName}, 45 min)\n• 14:30 — ${rec3.title} (${rec3.hallName})\n\n💡 I routed you around Workshop Hall B, which is currently at critical capacity (91%).`,
         suggestedSessions: [rec1, rec2],
         suggestedRoute: {
           toZoneId: rec1.hallId,
@@ -93,7 +93,7 @@ export class ConciergeService {
 
       const chosen = lowCrowdSessions.slice(0, 2);
       return {
-        text: `Workshop Hall A and Hall C currently have the lowest attendee density. Both have plenty of open seats and quick entry:\n\n• **${chosen[0]?.title}** in ${chosen[0]?.hallName}\n• **${chosen[1]?.title}** in ${chosen[1]?.hallName}`,
+        text: `Workshop Hall A and Hall C currently have the lowest attendee density. Both have plenty of open seats and quick entry:\n\n• ${chosen[0]?.title} in ${chosen[0]?.hallName}\n• ${chosen[1]?.title} in ${chosen[1]?.hallName}`,
         suggestedSessions: chosen,
         suggestedRoute: chosen[0] ? { toZoneId: chosen[0].hallId, zoneName: chosen[0].hallName } : undefined,
       };
@@ -107,7 +107,7 @@ export class ConciergeService {
       ].filter(Boolean);
 
       return {
-        text: `Right after the Opening Keynote concludes at 11:00 AM, thousands of attendees exit the Main Stage into the central concourse. To avoid the corridor crush, I suggest walking directly to Workshop Hall A:\n\n• **10:30/11:00** — ${afterSessions[0]?.title}\n• **11:15** — ${afterSessions[1]?.title}`,
+        text: `Right after the Opening Keynote concludes at 11:00 AM, thousands of attendees exit the Main Stage into the central concourse. To avoid the corridor crush, I suggest walking directly to Workshop Hall A:\n\n• 10:30/11:00 — ${afterSessions[0]?.title}\n• 11:15 — ${afterSessions[1]?.title}`,
         suggestedSessions: afterSessions,
         suggestedRoute: afterSessions[0] ? { toZoneId: afterSessions[0].hallId, zoneName: afterSessions[0].hallName } : undefined,
       };
@@ -120,7 +120,7 @@ export class ConciergeService {
       ).slice(0, 3);
 
       return {
-        text: `For your focus on **AI & Startups**, TechNova 2026 has curated high-impact sessions and deal-making lounges:\n\n1. **${matched[0]?.title}** (${matched[0]?.hallName})\n2. **${matched[1]?.title}** (${matched[1]?.hallName})\n3. **${matched[2]?.title}** (${matched[2]?.hallName})\n\nDon't miss the **Founder & Investor Lounge (Zone NET-01)** for curated 1-on-1 angel introductions.`,
+        text: `For your focus on AI & Startups, TechNova 2026 has curated high-impact sessions and deal-making lounges:\n\n1. ${matched[0]?.title} (${matched[0]?.hallName})\n2. ${matched[1]?.title} (${matched[1]?.hallName})\n3. ${matched[2]?.title} (${matched[2]?.hallName})\n\nDon't miss the Founder & Investor Lounge (Zone NET-01) for curated 1-on-1 angel introductions.`,
         suggestedSessions: matched,
         suggestedRoute: matched[0] ? { toZoneId: matched[0].hallId, zoneName: matched[0].hallName } : undefined,
       };
@@ -130,7 +130,7 @@ export class ConciergeService {
     if (q.includes('restroom') || q.includes('toilet') || q.includes('bathroom') || q.includes('wheelchair')) {
       const wc = zones.find((z) => z.id === 'zone-restroom-west')!;
       return {
-        text: `The nearest fully accessible restrooms with automatic doors and wide stalls are in the **West Wing (Zone WC-01)**, 40 meters from Hall A. It currently has zero queue.`,
+        text: `The nearest fully accessible restrooms with automatic doors and wide stalls are in the West Wing (Zone WC-01), 40 meters from Hall A. It currently has zero queue.`,
         suggestedRoute: {
           toZoneId: wc.id,
           zoneName: wc.name,
@@ -141,7 +141,7 @@ export class ConciergeService {
     // Default friendly event response
     const generalSessions = sessions.slice(0, 2);
     return {
-      text: `Welcome to **EventPulse AI at TechNova 2026**! I can help you find sessions, generate a personalized timetable, check real-time crowd levels, or calculate step-free accessible routes across the convention center.\n\nHere are top trending sessions right now:`,
+      text: `Welcome to EventPulse AI! I can help you find sessions, generate a personalized timetable, check real-time crowd levels, or calculate step-free accessible routes across the convention center.\n\nHere are top trending sessions right now:`,
       suggestedSessions: generalSessions,
       suggestedRoute: {
         toZoneId: generalSessions[0]?.hallId || 'zone-main-stage',
